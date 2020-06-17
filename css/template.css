@@ -1,0 +1,174 @@
+/* 分页模板css样式表 */
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+/* 导航栏表示符号导入的框架 */
+
+
+/* 将网页各外边距、内边距、边框设置为0 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px none;
+}
+
+/* 网页字体设置 */
+body,
+p {
+    font: 15px/1 Arial, "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    color: #222;
+    font-family: "Microsoft YaHei";
+    font-family: "SimSun";
+}
+
+body,
+html { 
+    height: 100%;
+    width: 100%;
+}
+
+/* 背景颜色 */
+body {
+    background-color: #94a6a2;
+}
+
+/* 去掉链接下划线 */
+a{
+    text-decoration: none;
+}
+
+/* h2字体通用设置 */
+h2 {
+    color: #526863;
+    font-family: "宋体";
+    font-weight: 2000;
+    font-size: 24px;
+}
+
+/* 内容面板样式 */
+.main {
+    background-color: #fff;
+    width: 80%;
+    margin: 7% 10%;
+    box-shadow: #606d68 10px 3px 15px 5px;
+    /* 四周阴影 */
+}
+
+/* 内容区所有内容宽度固定 */
+.inner {
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+}
+
+/* 页眉区高度 */
+.header{
+    height:20px;
+}
+
+/* 页眉标题区 */
+/* 高度与位置 */
+.header .head {
+    height: 20px;
+    position: relative;
+    padding-top: 30px;
+}
+
+/* 页眉logo区 */
+.logos{
+    height:20px;
+    float: right;
+    margin-top: -17px;
+}
+
+/* 分页内容区 */
+.container{
+    margin-bottom: 30px;
+}
+
+/* 页脚区 */
+/* 高度、宽度、顶部边框 */
+footer {
+    height: 160px;
+    border-top: 1px solid #222;
+    width: 100%;
+}
+
+/* 页脚区内容部分 */
+/* 高度、位置、文字居中 */
+.foot {
+    height: 120px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* 页脚区字体样式 */
+.foot p {
+    margin-top: 15px;
+    line-height: 4em;
+    font-size: 10px;
+}
+
+/* 导航栏样式 */
+/* 浮动在左侧 隐藏在页面外 */
+.nav {
+    float: left;
+    width: 10%;
+    margin-left: -10%;
+    height: 100%;
+    background-color: #7b8b85;
+    overflow: hidden;
+    transition: 0.8s all;
+}
+
+.side {
+    margin-left: 0;
+}
+
+/*靠边*/
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*去点*/
+.nav ul li {
+    list-style: none;
+}
+
+/*去下划线*/
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    transition: 0.6s all;
+}
+
+/* 鼠标悬浮时变色 */
+.nav ul li a:hover {
+    background: #94a6a2;
+}
+
+/* 导航栏表示符号位置、颜色 */
+/* 浮动在左侧 */
+.btn {
+    float: left;
+    padding: 0 10px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #606d68;
+    font-family: Ionicons;
+    cursor: pointer;
+}
+
+.btn:before {
+    content: '\f20d';
+}
+
+.btnc:before {
+    content: '\f12a';
+}
+

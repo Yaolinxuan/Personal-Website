@@ -1,0 +1,146 @@
+/* 将网页各外边距、内边距、边框设置为0 */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px none;
+}
+
+/* 网页字体设置 */
+body,p {
+    font: 15px/1 Arial,"Microsoft YaHei","黑体","宋体",sans-serif;
+    color: #222;
+    font-family: "SimSun";
+}
+
+/* 去掉链接下划线 */
+a{
+    text-decoration: none;
+}
+
+/* 页面背景颜色 */
+body{
+    background-color: #94a6a2;
+}
+
+/* 主内容区样式 */
+#container{
+    width: 75%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    margin: 55px 150px;
+}
+
+/* 页眉区高度 */
+header{
+    height:40px;
+}
+
+/* logo区样式 */
+.head {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+/* 导航区 */
+nav {
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 35px;
+}
+
+nav li{
+    display: inline-block;
+    /* 使列表横排 */
+    float: right;
+    /* 浮动在右侧 */
+    position: relative;
+    vertical-align: bottom;
+    font-weight: bold;
+    font-family: "宋体";
+    margin: 5px 0;
+}
+
+/* 导航区字体样式 */
+nav li a {
+    font-size: 12px;
+    color: #444;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    margin: -1px 0;
+    display: inline-block;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    border-bottom: 4px solid #7b8b85;
+    /* 鼠标悬浮时出现底边框 */
+}
+
+/* 个人简介区颜色、大小和位置 */
+.introduction{
+    background-color: #7b8b85;
+    width: 45%;
+    height: 55%;
+    position: absolute;
+    bottom: 0px;
+    /* 靠主内容区的底部 自动与左侧对齐 */
+}
+
+/* 文字部分设置在简介区的中间 靠进图片的位置 */
+/* 并且文字右对齐 */
+.introcont {
+    width: 50%;
+    height: 80%;
+    margin-left: 15px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* 简介文字部分样式 */
+.introcont p {
+    line-height: 4em;
+    font-size: 10px;
+    font-family: "微软正黑体";
+}
+
+/* 简介标题行距 */
+.introcont h4 {
+    line-height: 3em;
+}
+
+/* 中心图片 */
+/* 根据浏览器窗口进行定位 */
+#picture{
+    position: fixed;
+    top: 130px;
+    left: 400px;
+}
+
+/* 右侧装饰区 */
+/* 高度、宽度、位置、浮动在右侧 */
+.myWorld {
+    height: 20px;
+    width: 180px;
+    float: right;
+    margin-top: 150px;
+    border-bottom: 1px solid #666;
+    text-align: center;
+}
+
+/* 文字样式 */
+.myWorld p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #586964;
+    font-family: "Times New Roman";
+}

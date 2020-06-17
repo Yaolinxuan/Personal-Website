@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0px none;
+}
+
+/* 外边框样式 */
+.countdown {
+    width: 95%;
+    height: 350px;
+    border: 25px solid #e4c27b;
+    margin-top: 70px;
+}
+
+/* 中间边框样式 */
+.middle {
+    width: auto;
+    height: 334px;
+    border: 8px solid #a88a56;
+}
+
+/* 黑板样式 */
+.board {
+    width: auto;
+    height: 284px;
+    background-color: #495f55;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* 黑板字体样式 */
+.board p,.board h2,.board h1{
+    color: #fff;
+    line-height: 2em;
+}
+
+.board p {
+    width: 73%;
+    margin: 20px auto;
+}
+
+.board h1 {
+    font-size: 40px;
+}
+
+/* 院校比较模块 */
+.schoolCompare {
+    width: 100%;
+    margin-top: 100px;
+    border-top: 1px dotted #94a69f;
+    padding-top: 40px;
+    text-align: left;
+}
+
+/* 对比区位置、背景颜色 */
+.compare {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #839990;
+    color: #eee;
+    line-height: 3em;
+}
+
+/* 去掉列表前序列点 */
+.compare ul {
+    list-style-type: none;
+}
+
+/* 左侧样式 */
+.sLeft {
+    width: 45%;
+    border-right: 1px solid #eee;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    float: left;
+}
+
+/* 右侧样式 */
+.sRight {
+    width: 50%;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+/* 报录比表格样式 */
+.schoolCompare table {
+    border: 1px solid #eee;
+    width: 300px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    /* 合并单元格 */
+    text-align: center;
+}
+
+/* 单元格边框 */
+.schoolCompare td,th {
+    border: 1px solid #eee;
+}
+
+/* 时间轴区域 */
+.timeline {
+    color: #fff;
+    margin-top: 120px;
+    border-top: 1px dotted #94a69f;
+    padding-top: 60px;
+}
+
+/* 实现时间轴效果的ul */
+.timeline ul {
+    margin-top: 40px;
+    background: #748a80;
+    padding-bottom: 50px;
+}
+
+/* 将每一个li元素压缩，设置背景色，使其成为时间轴的主轴，并使其居中。 */
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+}
+
+/* 用伪元素选择器after选中li之后的内容，并使其变形为圆形。 */
+.timeline ul li:after {
+    content: '';
+    /* 不可去掉 */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+/* 为列表项中的div元素添加样式 */
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 300px;
+    padding: 15px;
+    background: #899c98;
+}
+
+/* 给div元素的::before伪元素添加箭头样式 */
+.timeline ul li div::before {
+    content: '';
+    /* 不可去 */
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* 奇数个元素的样式 */
+/* 奇数个元素在时间轴右侧 */
+.timeline ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #94a6a2 transparent transparent;
+}
+
+/* 偶数个元素的样式： */
+/* 偶数个元素在时间轴左侧 */
+.timeline ul li:nth-child(even) div {
+    left: -368px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #94a6a2;
+}
+
+/* 字体设置 */
+time {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.timeline h4 {
+    padding-top: 10px;
+}
+
+.timeline p {
+    color: #fff;
+}
+
+/* 链接样式 */
+.timeline a {
+    color: rgb(235, 224, 224);
+}
+
+.timeline a:hover {
+    border-bottom: 1px solid #5d8875;
+    color: #fff;
+}

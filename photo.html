@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人相册</title>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link rel="stylesheet" type="text/css" href="css/photo.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <!-- 列表结构 -->
+        <ul>
+            <li><a class="" href="index.html">
+                <img src="images/logo-y1.svg" alt="logo">首&nbsp 页
+                <!-- 文字前加入装饰图片 -->
+            </a></li>
+            <li><a class="" href="photo.html">
+                <img src="images/images.svg" alt="images">个人相册
+            </a></li>
+            <li><a class="" href="diet.html">
+                <img src="images/fast-food.svg" alt="fast-food">减肥日记
+            </a></li>
+            <li><a class="" href="notebook.html">
+                <img src="images/library.svg" alt="library">考研笔记
+            </a></li>
+        </ul>
+    </div>
+    <!-- 菜单标识符 -->
+    <a class="btn"></a>
+
+    <!-- 主内容区 -->
+    <div class="main">
+        <!-- inner类包含所有内容，使所有内容宽度占主内容区80% 居中 -->
+        <div class="inner">
+
+            <!-- 页眉区 -->
+            <!-- 页眉区包括左侧标题区 和右侧logo区 -->
+            <div class="header">
+
+                <!-- 标题区 -->
+                <div class="head">
+                    <img src="images/logo-y.svg" alt="logo"><strong>ao Linxuan的个人相册</strong>
+                </div>
+
+                <!-- logo区 -->
+                <div class="logos">
+                    <img src="images/leaf.svg" alt="leaf">
+                    <img src="images/ice-cream.svg" alt="ice-cream">
+                    <img src="images/heart.svg" alt="heart">
+                    <img src="images/planet.svg" alt="planet">
+                </div>
+            </div>
+
+
+            <!-- container类包含页面所要展示的内容 -->
+            <!-- 不同页面的不同内容写在container类中 -->
+            <div class="container">
+                <!-- 相册页包含几个不同的table来展示图片 -->
+
+                <!-- 第一部分table1 两行两列 -->
+                <!-- 在页面首部 -->
+                <table class="t1">
+                    <!-- 第一行 -->
+                    <tr>
+                        <td rowspan="2">
+                            <!-- 跨两行 -->
+                            <img src="images/ph1-1.jpg" alt="">
+                        </td>
+                        <td>
+                            <img src="images/wr1.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- 第二行第二列再分为一个一行两列的表格 放置两张图片 -->
+                            <table class="apart">
+                                <tr>
+                                    <td><img src="images/ph1-2.jpg" alt=""></td>
+                                    <td><img src="images/ph1-3.jpg" alt=""></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 留言区 -->
+                <div class="comment">
+
+                    <!-- 提示性文字 -->
+                    <h1>Leave Your Comment</h1>
+
+                    <!-- 表单结构 -->
+                    <!-- 在这里输入的留言会递交到后端 -->
+                    <form action="">
+                        <!-- 输入文本框 -->
+                       <input type="text" name="comment" value="comment" size="20">
+                       <!-- span使输入框与按钮位于同一行 -->
+                    <span>
+                        <!-- 提交按钮 -->
+                        <button type="submit" name="button" id="button">Submit</button>
+                    </span> 
+                    </form>   
+                </div>
+
+                <!-- 推荐电影区 -->
+                <!-- 分为左侧图片 和右侧内容简介 -->
+                <div class="movie">
+                    <!-- 标题 -->
+                    <h2>电影推荐</h2>
+                    <!-- 左侧图片 -->
+                    <div class="left">
+                        <img src="images/movie.jpeg" alt="movie poster">
+                    </div>
+                    <!-- 右侧电影介绍 -->
+                    <div class="right">
+                        <h3>赎罪</h3>
+                        <p> &nbsp;《赎罪》讲述了布里奥妮为她在13岁那年，因为一则她所不能理解的爱情，而拆散了姐姐塞西莉亚和仆人罗比的幸福而做终生的忏悔。<br>
+                            &nbsp;二战前13岁少女布里奥妮刚刚开始尝试写作，想象力丰富。一天，通过窗户，看到仆人的儿子罗比特纳和姐姐塞西利亚有暧昧关系，后来又发现他写给姐姐的一封很色情的书信。不懂世事但想象力丰富的布里奥妮于是便对罗比产生了反感，后来在表姐遭人强暴的时候，便诬陷罗比，害罗比下了大牢，后在二战中，罗比和姐姐塞西利亚都不幸死去，永远没有机会“终成眷属”。<br>
+                            &nbsp;《赎罪》所震人心弦的并不是那本自美好的爱情，而是一场源于灵魂无解的救赎，电影伊始出色的镜头画面和恰到好处的配乐引人入胜，而门不当户不对的爱情注定了这是一部命运多舛的电影，那虚构的杜撰成为了其脉络的原罪，致力挽回罪责一生的张力，却最终只能得见于虚拟的小说中完成赎罪的结局，三颗战争中破碎的心灵，使过错成为了已无事于补的遗憾，出人意料又在情理之间的结局既构筑了电影独具匠心的内在，也为人以耐人寻味的深思。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 第二个表格table2 两行三列 -->
+                <!-- 第一行放置图片 第二行为文字 -->
+                <table class="t2">
+                    <!-- 图片 -->
+                    <tr>
+                        <td><img src="images/ph2-1.jpg" alt=" an actress"></td>
+                        <td><img src="images/ph2-2.jpg" alt="perfume"></td>
+                        <td><img src="images/ph2-3.jpg" alt="selfie"></td>
+                    </tr>
+                    <!-- 文字 -->
+                    <tr>
+                        <td>
+                            <p>万般美景都难抵日落，<br>夕阳杂糅着生命本能的焦虑与休憩。<br>躺在火烧云下的晚风中喝杯酒，<br>看着车流，<br>让时间停一会。</p>
+                        </td>
+                        <td>
+                            <p>有时候也不是温柔，只是在意的事变少了，以前能冒犯到你的现在都觉得无所谓，短暂相逢下的打搅像烟花碎屑落在头发上，拂去就好了，还有很长的路要走，还有很亮的星星要去看，别在不重要上耗费太多。</p>
+                        </td>
+                        <td>
+                            <p>你也曾是银河的浪漫子民，<br>孤身坠入地球，<br>等不到群星来信。</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 第三个表格table3 两行四列 -->
+                <table class="t3">
+                    <!-- 第一行只放置一张图片 -->
+                    <tr>
+                        <!-- 跨四列 -->
+                        <td colspan="4">
+                            <img src="images/ph3-1.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ph3-2.jpg" alt=""></td>
+                        <td><img src="images/ph3-3.jpg" alt=""></td>
+                        <td><img src="images/ph3-4.jpg" alt=""></td>
+                        <td valign=top><img src="images/ph3-5.png" alt=""></td>
+                        <!-- 第二行第四列图片靠顶部放置 -->
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- 页脚区 -->
+            <footer>
+                <!-- 页脚区内容类 -->
+                <div class="foot">
+                    <img src="images/logo-y.svg" alt="logo"><strong>ao</strong>
+                    <p>Copyright@姚麟宣(Rachel)All Rights Reserved.</p>
+
+                    <!-- 装饰logo -->
+                    <img src="images/leaf.svg" alt="leaf">
+                    <img src="images/ice-cream.svg" alt="ice-cream">
+                    <img src="images/heart.svg" alt="heart">
+                    <img src="images/planet.svg" alt="planet">
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- 实现导航栏隐藏在左侧，点击标识符时出现的效果 -->
+    <script type="text/javascript">
+        $('.btn').on('click', function () {
+            $('.btn').toggleClass('btnc');
+            $('.nav').toggleClass('side');
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0 none;
+        }
+
+        body {
+            font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+            color: #fff;
+        }
+
+        .timeline ul {
+            background: #456990;
+            padding-bottom: 50px;
+        }
+
+        /* 将每一个li元素压缩，设置背景色，使其成为时间轴的主轴，并使其居中。 */
+        .timeline ul li {
+            list-style-type: none;
+            position: relative;
+            width: 6px;
+            margin: 0 auto;
+            padding-top: 50px;
+            background: #fff;
+        }
+
+        /* 用伪元素选择器after选中li之后的内容，并使其变形为圆形。 */
+        .timeline ul li:after {
+            content: '';
+            /* 不重要 */
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: inherit;
+        }
+
+        /* 为列表项中的div元素添加样式 */
+        .timeline ul li div {
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 15px;
+            background: #F45B69;
+        }
+
+        /* 给div元素的::before伪元素添加箭头样式 */
+        .timeline ul li div::before {
+            content: '';
+            position: absolute;
+            bottom: 7px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        /* 奇数个元素的样式 */
+        .timeline ul li:nth-child(odd) div {
+            left: 45px;
+        }
+
+        .timeline ul li:nth-child(odd) div::before {
+            left: -15px;
+            border-width: 8px 16px 8px 0;
+            border-color: transparent #F45B69 transparent transparent;
+        }
+
+        /* 偶数个元素的样式： */
+        .timeline ul li:nth-child(even) div {
+            left: -468px;
+        }
+
+        .timeline ul li:nth-child(even) div::before {
+            right: -15px;
+            border-width: 8px 0 8px 16px;
+            border-color: transparent transparent transparent #F45B69;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="timeline">
+        <ul>
+            <li>
+                <!-- 在每一个li元素中还有一个div元素，作为时间轴的内容部分 -->
+                <div>
+                    <time>2020</time>
+                    今年是初试
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>2021</time>
+                    今年是复试
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>2021-03-17</time>
+                    我一定要上岸！
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time></time>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time></time>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
